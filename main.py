@@ -11,6 +11,7 @@ app.config.from_object(Config)
 
 @app.route("/")
 def index():
+    num = 100
     return "index page"
 
 if __name__ == "__main__":
