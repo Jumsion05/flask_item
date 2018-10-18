@@ -12,7 +12,8 @@ def center():
 
 @app.route("/jump")
 def jump():
-    return render_template("index.html")
+    return render_temp("index.html")
+
 
 if __name__ == "__main__":
   app.run()
