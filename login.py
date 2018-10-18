@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -12,7 +13,7 @@ def center():
 
 @app.route("/jump")
 def jump():
-    return render_temp("index.html")
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
