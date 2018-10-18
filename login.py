@@ -10,6 +10,9 @@ def login():
 def center():
     return "主页面"
 
+@app.route("/jump")
+def jump():
+    return render_template("index.html")
 
 if __name__ == "__main__":
   app.run()
