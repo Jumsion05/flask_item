@@ -8,6 +8,7 @@ def index():
 
 @app.route("/center")
 def center():
+    num = 100
     return "center页面"
 
 if __name__ == "__main__":
