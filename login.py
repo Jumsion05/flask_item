@@ -13,5 +13,9 @@ def center():
     num = 100
     return "center页面"
 
+@app.route("/delete")
+def delete():
+    return "delete页面"
+
 if __name__ == "__main__":
     app.run()
