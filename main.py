@@ -14,5 +14,9 @@ def index():
     num = 100
     return "index page"
 
+@app.route("/hello")
+def hello():
+    return "hello python"
+
 if __name__ == "__main__":
     app.run()
