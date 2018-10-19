@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -16,6 +17,11 @@ def center():
 @app.route("/delete")
 def delete():
     return "delete页面"
+
+@app.route("/temp")
+def func():
+    return render_template("index.html")
+    
 
 if __name__ == "__main__":
     app.run()
