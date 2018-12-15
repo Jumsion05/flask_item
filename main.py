@@ -18,5 +18,9 @@ def index():
 def hello():
     return "hello python"
 
+@app.route("/login")
+def login():
+    return "登录界面"
+
 if __name__ == "__main__":
     app.run()
