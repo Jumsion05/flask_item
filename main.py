@@ -22,5 +22,9 @@ def hello():
 def login():
     return "登录界面"
 
+@app.route("/center")
+def center():
+    return "中心页面"
+
 if __name__ == "__main__":
     app.run()
